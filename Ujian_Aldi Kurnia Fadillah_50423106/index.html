@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pencatatan Keuangan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1 class="title">Pencatatan Keuangan</h1>
+
+    <div class="summary">
+        <div class="card income">
+            <h3>Total Income</h3>
+            <p id="totalIncome">Rp 0</p>
+        </div>
+        <div class="card expense">
+            <h3>Total Outcome</h3>
+            <p id="totalOutcome">Rp 0</p>
+        </div>
+        <div class="card balance">
+            <h3>Balance</h3>
+            <p id="totalBalance">Rp 0</p>
+        </div>
+    </div>
+
+    <div class="card form-card">
+        <h2>Tambah / Edit Transaksi</h2>
+
+        <input type="hidden" id="editIndex">
+
+        <div class="form-group">
+            <label>Nama Transaksi</label>
+            <input type="text" id="nama" placeholder="Contoh: Gaji Bulanan">
+        </div>
+
+        <div class="form-group">
+            <label>Nominal (Rp)</label>
+            <input type="number" id="nominal" placeholder="Contoh: 5000000">
+        </div>
+
+        <div class="form-group">
+            <label>Kategori</label>
+            <select id="kategori">
+                <option value="">Pilih kategori...</option>
+                <option value="income">Pemasukan</option>
+                <option value="outcome">Pengeluaran</option>
+            </select>
+        </div>
+
+        <button class="btn" onclick="simpanTransaksi()">Simpan</button>
+    </div>
+
+    <div class="card">
+        <h2>Daftar Transaksi</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nama</th>
+                    <th>Nominal</th>
+                    <th>Kategori</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody id="tabelTransaksi"></tbody>
+        </table>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f4f6f9;
+    padding: 20px;
+    margin: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+
+.title {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.summary {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.summary .card {
+    flex: 1;
+    padding: 20px;
+    border-radius: 12px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-weight: 600;
+}
+
+.income { background: #2ecc71; color: rgb(0, 0, 0); }
+.expense { background: #e74c3c; color: rgb(0, 0, 0); }
+.balance { background: #3498db; color: rgb(0, 0, 0); }
+
+.card {
+    background: rgb(255, 255, 255);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    margin-bottom: 20px;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    background: #3498db;
+    color: white;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    background: #1f78b8;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    padding: 12px;
+    background: #3498db;
+    color: white;
+}
+
+td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+.action-btn {
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.edit { background: #f1c40f; }
+.delete { background: #e74c3c; color: white; }
